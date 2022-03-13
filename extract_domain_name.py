@@ -10,6 +10,8 @@ test.assert_equals(domain_name("http://google.co.jp"), "google")
 test.assert_equals(domain_name("www.xakep.ru"), "xakep")
 test.assert_equals(domain_name("https://youtube.com"), "youtube")
 
+Other Test Cases
+
 """
 
 
