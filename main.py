@@ -12,7 +12,7 @@ def verify(index):
   if index is not None:
     print(f"{ITEM} has been found at index: {index}")
   else:
-    print(f"{ITEM} has not been found")
+    print(f"{ITEM} not found")
 
 
 #To verify that the linear search is consistent, this time to return the false path
