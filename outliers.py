@@ -12,6 +12,8 @@ Should return: 11 (the only odd number)
 Should return: 160 (the only even number)
 
 """
+import unittest
+
 
 def find_outlier(integers):
     even_numbers = []
@@ -28,3 +30,15 @@ def find_outlier(integers):
         elif len(odd_numbers) == 1:
             outlier = odd_numbers[0]
     return outlier
+
+
+class TestOutliers(unittest.TestCase):
+  def test_odd_numbers(self):
+    self.assertEqual(find_outlier([2, 4, 0, 100, 4, 11, 2602, 36]), 11)
+
+  def test_even_numbers(self):
+    self.assertEqual(find_outlier([160, 3, 1719, 19, 11, 13, -21]), 160)
+
+
+if __name__ == '__main__':
+  unittest.main()
