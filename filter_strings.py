@@ -21,3 +21,6 @@ class TestFilterStrings(unittest.Testcase):
     
     def test_two(self):
         self.assertEqual(filter_list([1,2,'aasf','1','123',123]), [1,2,123])
+      
+    def test_three(self):
+      self.assertEqual(filter_list([1,4,5,'a','b']), [1,4,5])
