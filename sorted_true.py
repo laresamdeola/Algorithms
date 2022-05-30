@@ -1,0 +1,20 @@
+"""
+Complete the method which accepts an array of integers, and returns one of the following:
+
+"yes, ascending" - if the numbers in the array are sorted in an ascending order
+"yes, descending" - if the numbers in the array are sorted in a descending order
+"no" - otherwise
+You can assume the array will always be valid, and there will always be one correct answer.
+"""
+
+def is_sorted_and_how(arr):
+  text = None
+  new_arr = sorted(arr)
+  if new_arr == arr:
+      text = 'yes, ascending'
+  elif sorted(new_arr, reverse=True) == arr:
+      text = 'yes, descending'
+  else:
+      text = 'no'
+  return text
+        
