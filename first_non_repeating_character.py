@@ -10,7 +10,7 @@ but the function should return the correct case for the initial letter. For exam
 the input 'sTreSS' should return 'T'.
 
 If a string contains all repeating characters, it should return an empty string ("") or
-None for example.
+None for example
 """
 
 def first_non_repeating_letter(string):
